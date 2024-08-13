@@ -1,1 +1,10 @@
-
+name: bitcoin_mining_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - pandas
+  - matplotlib
+  - numpy
+  - geopandas
