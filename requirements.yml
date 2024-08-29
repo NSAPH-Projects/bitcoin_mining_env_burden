@@ -4,10 +4,10 @@ channels:
   - conda-forge
 dependencies:
   - python=3.9.13
-  - pandas
-  - matplotlib
-  - numpy
-  - geopandas
+  - pandas=2.2.2
+  - numpy=1.26.4
+  - geopandas=0.14.2
+  - pip
   - pip:
     - ipykernel==6.29.5
     - openpyxl==3.1.5
