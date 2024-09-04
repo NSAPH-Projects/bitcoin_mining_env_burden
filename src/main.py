@@ -13,15 +13,9 @@ def main(args_list=None):
     if args_list is None:
         args_list = sys.argv[1:]
     args = parser.parse_args(args_list)
-
-    if args.daily:
-        period = 'daily'
-    else:
-        period = 'monthly'
-    
     if args.save_path:
-        complete_dataset(period=period, base_dir=args.base_dir, save_path=args.save_path)
+        complete_dataset(base_dir=args.base_dir, save_path=args.save_path)
     else:
-        complete_dataset(period=period, base_dir=args.base_dir)
+        complete_dataset(base_dir=args.base_dir)
 if __name__ == '__main__':
     main()

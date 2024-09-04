@@ -16,11 +16,3 @@ parser.add_argument(
 parser.add_argument(
     '--save_path',
     help='Output directory for the dataset.')
-
-group = parser.add_mutually_exclusive_group(required=True)
-
-group.add_argument('--daily', dest='daily', action='store_true', default=False,
-    help='Calculate daily.')
-
-group.add_argument('--monthly', dest='monthly', action='store_true', default=False,
-    help='Calculate monthly.')
