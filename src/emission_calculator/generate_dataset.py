@@ -1,9 +1,9 @@
-from .config import SAVE_PATH 
+from .config import BASE_DIR, SAVE_PATH
 from .data_loader import load_miners_data, save_complete_dataset, load_unit_rates
-from .main import find_miner_emissions
+from .find_miner_emissions import find_miner_emissions
 import pandas as pd
 
-def complete_dataset(period = 'monthly', save = True, save_path = SAVE_PATH):
+def complete_dataset(period = 'monthly', save = True, base_dir = BASE_DIR, save_path = SAVE_PATH):
     """
     Generates and saves a complete dataset of the miners emissions for a specified period.
 
@@ -21,7 +21,8 @@ def complete_dataset(period = 'monthly', save = True, save_path = SAVE_PATH):
     """
     
     #load miners data
-    df_miners = load_miners_data()
+    print('complete_dataset', base_dir)
+    df_miners = load_miners_data(base_dir=base_dir)
     
     #Initialize an empty list to hold the DataFrames
     df_complete = []
@@ -30,7 +31,7 @@ def complete_dataset(period = 'monthly', save = True, save_path = SAVE_PATH):
     for miner in df_miners.id.unique():
         print(miner)
         # Calculate emissions for the uniques miners
-        df = find_miner_emissions(miner=miner, period=period)
+        df = find_miner_emissions(miner=miner, period=period, base_dir=base_dir)
         # Append the resulting emissions DataFrame of all the unique miners
         df_complete.append(df)
 
@@ -46,8 +47,9 @@ def complete_dataset(period = 'monthly', save = True, save_path = SAVE_PATH):
         ((df_complete_peryear_month.year == 2023) & (df_complete_peryear_month.month <= 7))
     ]
 
-    #same the complete dataset
-    df_complete_2022_2023.to_csv(save_path, index=False)
-    print(f"Dataset saved to {save_path}")
+    #save the complete dataset
+    name = save_path + 'df_complete_2022_2023.csv'
+    df_complete_2022_2023.to_csv(name, index=False)
+    print(f"Dataset saved to {name}")
 
     return df_complete_2022_2023

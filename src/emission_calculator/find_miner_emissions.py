@@ -2,15 +2,15 @@ import pandas as pd
 import numpy as np 
 from .data_loader import load_miners_data, load_unit_rates, load_moers_data, aggregate_moers_data
 from .calculations import calculate_mw_demand, calculate_emissions
-from .config import DAYS_PER_YEAR, MONTHS_PER_YEAR
+from .config import DAYS_PER_YEAR, MONTHS_PER_YEAR, BASE_DIR
 
 
-def find_miner_emissions(miner, period=['daily', 'monthly'], wattime_data=[True, False]):
-    df_miners = load_miners_data()
-    df_unit_rates = load_unit_rates()
+def find_miner_emissions(miner, period=['daily', 'monthly'], wattime_data=[True, False], base_dir=BASE_DIR):
+    df_miners = load_miners_data(base_dir=base_dir)
+    df_unit_rates = load_unit_rates(base_dir=base_dir)
     condition = df_miners['id'] == miner
     area = df_miners.loc[condition]['Grid Region'].item()
-    df_moers = load_moers_data(area=area)
+    df_moers = load_moers_data(area=area, base_dir=base_dir)
     date_range = pd.date_range(start='2018-01', end='2023-08', freq='M').strftime('%Y-%m').tolist()
 
     

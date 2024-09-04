@@ -1,30 +1,33 @@
 #data_loader.py
-from .config import MINERS_FILE_PATH, UNIT_RATES_FILE_PATH, MOERS_BASE_PATH, SAVE_PATH
+from .config import MINERS_FILE_PATH, UNIT_RATES_FILE_PATH, MOERS_BASE_PATH, BASE_DIR, SAVE_PATH
 import pandas as pd 
 import numpy as np 
+import os
 import openpyxl
 
-def load_miners_data():
+def load_miners_data(base_dir=BASE_DIR):
     '''
     Loads the miners data from an Excel file.
 
     Returns:
         pd.DataFrame : A DataFarme containing the miner data. 
     '''
-    return pd.read_excel(MINERS_FILE_PATH)
+    filepath = os.path.join(base_dir,MINERS_FILE_PATH)
+    return pd.read_excel(filepath)
 
-def load_unit_rates():
+def load_unit_rates(base_dir=BASE_DIR):
     """
     Loads the unit rates data from CSV file, and removes any unnecessary columns.
 
     Returns: 
         A DataFrame containing the unit rates data.
     """
-    df_unit_rates = pd.read_csv(UNIT_RATES_FILE_PATH)
+    filepath = os.path.join(base_dir,UNIT_RATES_FILE_PATH)
+    df_unit_rates = pd.read_csv(filepath)
     df_unit_rates = df_unit_rates.drop('Unnamed: 0', axis =1)
     return df_unit_rates
 
-def load_moers_data(area):
+def load_moers_data(area, base_dir=BASE_DIR):
     """
     Loads The MOERS(Marginal Operating Emissions Rates) data for a specific area from a CSV file 
     and converts the data column to datetime format.
@@ -36,7 +39,8 @@ def load_moers_data(area):
         A DataFrame containing he MOERS adta for a specified area with teh date columns converted to
         datetime format.
     """
-    df_moers = pd.read_csv(f'{MOERS_BASE_PATH}/{area}_plant_mix.csv')
+    filepath = os.path.join(base_dir,MOERS_BASE_PATH)
+    df_moers = pd.read_csv(f'{filepath}/{area}_plant_mix.csv')
     df_moers['Date'] = pd.to_datetime(df_moers[f'{df_moers.columns[0]}'])
     return df_moers
 

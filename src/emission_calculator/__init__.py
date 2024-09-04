@@ -1,2 +1,2 @@
-from .main import find_miner_emissions
-from .emissions_complete_df import complete_dataset 
+from .find_miner_emissions import find_miner_emissions
+from .generate_dataset import complete_dataset 
