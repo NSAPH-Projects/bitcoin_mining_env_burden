@@ -39,9 +39,7 @@ def inmap_data(input_data, output_data_path):
     gdf['NOx'] = gdf['nox_lbs_wattime'] * 0.453592
     gdf['SOx'] = gdf['so2_lbs_wattime'] * 0.453592
 
-    #display the final GeoDataFrame before saving 
-    print(gdf[['geometry', 'PM2_5','NOx','SOx']])
-
     #select and save the dataset 
-    gdf[['geometry', 'PM2_5','NOx','SOx']].to_file(output_data_path)
+    save_path = output_data_path + 'emissions_2022_2023.shp'
+    gdf[['geometry', 'PM2_5','NOx','SOx']].to_file(save_path)
 

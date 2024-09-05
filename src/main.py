@@ -24,7 +24,9 @@ def main(args_list=None):
         #check to make sure that save_path is a directory
         if not os.path.isdir(args.save_path):
             raise ValueError('Specified save_path is not a valid directory. Please specify a directory in which to save the output.')
-        inmap_data(input_data=path, output_data_path=args.save_path + '/emissions_2022_2023.shp')
+        save_path = args.save_path + '/emissions_2022_2023/'
+        os.makedirs(save_path)
+        inmap_data(input_data=path, output_data_path=save_path)
 
 if __name__ == '__main__':
     main()
