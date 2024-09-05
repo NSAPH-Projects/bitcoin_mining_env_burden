@@ -122,10 +122,10 @@ CLI argument definitions :
 
 #### To calculate emissions and create the complete dataset
 ```bash
-python src/main.py --emissions --base_dir <path_to_base_directory> --save_path <path_to_base_directory>
+python src/main.py --emissions --base_dir <path_to_base_directory> --save_path <path_to_output_directory>
 ```
 
 #### To perform InMAP processing using the complete dataset
 ```bash
-python src/main.py --inmap --base_dir <path_to_base_directory> --save_path <path_to_base_directory>
+python src/main.py --inmap --base_dir <path_to_base_directory> --save_path <path_to_output_directory>
 ```
