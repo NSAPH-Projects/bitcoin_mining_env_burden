@@ -12,7 +12,7 @@ This repository contains code and data for analyzing the environmental burden of
 4. [Data](#data)
 5. [Emission Calculator Module](#emission-calculator-module)
 6. [InMAP Processing Module](#inmap-processing-module)
-7. [Pipeline](#pipeline)
+7. [Usage](#usage)
 
 ## Introduction
 
@@ -22,7 +22,7 @@ Bitcoin mines, massive computing clusters generating cryptocurrency tokens, cons
 - `data/`: This directory contains subfolders for input and output files. It includes symlinks to the actual data files and documentation for internal use.<br>
   - `input_private/`: A folder containing the raw datasets related to Bitcoin mining and environmental impact that need to be processed.
   - `intermedidate/`: A folder where intermediate datasets are stored during the data processing workflow. These datasets serve as checkpoints or partial results that facilitate step-by-step data processing.
-- `notes/` : ncludes python files related to data analysis, exploration and visualization.
+- `notes/` : Includes python files related to data analysis, exploration and visualization.
 - `src/`: Contains the main modules and scripts used in the analysis.
   - `emission_calculator/`: This module calculates environmental emissions related to Bitcoin mining operations.
   - `inmap_processing/`: This module handles the processing of data for InMAP (Intervention Model for Air Pollution) tasks.
@@ -48,7 +48,7 @@ To get started with this project, you need to set up your development environmen
 
 2. **Prepare your Data**
 
-    Add symlinks to input, and intermediate folders inside the corresponding /data subfolders.
+    Add symlinks to input and intermediate folders inside the corresponding /data subfolders.
     For example:
 
     ```bash
@@ -80,7 +80,6 @@ Below are the datasets included in the input_private folder:
 - **File Name**: `condensed_unit_rates.csv`
 - **Description**: This dataset provides essential specifications and unit rates for power plants, enabling a detailed analysis of their operational efficiency and environmental impact.
 
-
 Below are the datasets included in the intermediate folder:
 
 ### Complete Emissions Dataset 
@@ -102,13 +101,31 @@ The 'emission_calculator` module calculates the enviormental emissions of all th
 
 The 'inmap_processing' module processes emissions data and output it in a geospatial format suitable for InMAP modeling. This module specifically converts emissions data into shapefiles, allowing for spatial analysis and visualization of environmental impacts across different geographic locations. 
 
-## Pipeline 
+## Usage 
 
-Run the script directly using Python, passing parameters via the command line (if required) to execute the full workflow: 
+The  script (main.py) provides two main functionalities: calculating emissions and performing InMAP processing using datasets. The command-line arguments allow you to choose the operation mode, specify the base directory for the input data, and define the output directory for the results.
 
 ```bash
-python src/main.py --emissions --base_dir <path_to_base_directory> --save_path <path_to_save_directory>
+python src/main.py [-h] (--emissions | --inmap) --base_dir BASE_DIR --save_path SAVE_PATH
 ```
 
+CLI argument definitions : 
 
+```optional arguments:
+  -h, --help            Show this help message and exit.
+  --emissions           Calculate emissions and create the dataset.
+  --inmap               Perform INMAP processing using the complete dataset.
+  --base_dir BASE_DIR   Specify the base directory for the input data.
+  --save_path SAVE_PATH Output directory where the dataset or results will be saved.
+```
+### Example Usage 
 
+#### To calculate emissions and create the complete dataset
+```bash
+python src/main.py --emissions --base_dir <path_to_base_directory> --save_path <path_to_base_directory>
+```
+
+#### To perform InMAP processing using the complete dataset
+```bash
+python src/main.py --inmap --base_dir <path_to_base_directory> --save_path <path_to_base_directory>
+```
