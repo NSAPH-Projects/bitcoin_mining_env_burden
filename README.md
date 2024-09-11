@@ -20,7 +20,7 @@ Bitcoin mines, massive computing clusters generating cryptocurrency tokens, cons
 
 ## Repository Structure 
 - `data/`: This directory contains subfolders for input and output files. It includes symlinks to the actual data files and documentation for internal use.<br>
-  - `input_private/`: A folder containing the raw datasets related to Bitcoin mining and environmental impact that need to be processed.
+  - `input_private/`: A folder containing the raw datasets related to Bitcoin mining and environmental impact that need to be processed. Please reach out directly to the researchers for this data (contact info at the end of the README).
   - `intermedidate/`: A folder where intermediate datasets are stored during the data processing workflow. These datasets serve as checkpoints or partial results that facilitate step-by-step data processing.
 - `notes/` : Includes python files related to data analysis, exploration and visualization.
 - `src/`: Contains the main modules and scripts used in the analysis.
@@ -129,3 +129,7 @@ python src/main.py --emissions --base_dir <path_to_base_directory> --save_path <
 ```bash
 python src/main.py --inmap --base_dir <path_to_base_directory> --save_path <path_to_output_directory>
 ```
+
+
+## Contact Information
+Gianluca Guidi, PhD student ggianluca@hsph.harvard.edu
