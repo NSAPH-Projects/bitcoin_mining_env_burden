@@ -1,7 +1,6 @@
 # Bitcoin Mining Environmental Burden Analysis
 
-This repository refers to the paper:\\
-**Title:** "The Environmental Burden of the United States’ Bitcoin Mining Boom"
+This repository refers to the paper **The Environmental Burden of the United States’ Bitcoin Mining Boom**
 
 **Authors**: Gianluca Guidi (1,2); Francesca Dominici (1); Nat Steinsultz (3); Gabriel Dance (4), Lucas Henneman (5); Henry Richardson (3); Edgar Castro (6); Falco J. Bargagli-Stoffi (1); Scott Delaney (6)
 
@@ -31,7 +30,7 @@ This repository contains code and data for analyzing the environmental burden of
 
 ## Introduction
 
-Bitcoin mines, massive computing clusters generating cryptocurrency tokens, consume vast amounts of electricity. The amount of fine particle (PM2.5) air pollution created due to their electricity consumption, and its effect on environmental health, is explored in this study. We identified the largest mines in the United States in 2022, the electricity-generating plants responding to their demand, and the communities most affected by Bitcoin mine-attributable air pollution. This repository provides the tools and data necessary to reproduce our analysis.
+Bitcoin mines, massive computing clusters generating cryptocurrency tokens, consume vast amounts of electricity. This study explores the amount of fine particle (PM2.5) air pollution created due to their electricity consumption and its effect on environmental health. We identified the largest mines in the United States in 2022, the electricity-generating plants responding to their demand, and the communities most affected by Bitcoin mine-attributable air pollution. This repository provides the tools and data necessary to reproduce our analysis.
 
 ## Repository Structure 
 - `data/`: This directory contains subfolders for input and output files. It includes symlinks to the actual data files and documentation for internal use.<br>
