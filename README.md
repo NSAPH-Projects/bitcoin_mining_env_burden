@@ -1,6 +1,6 @@
 # Bitcoin Mining Environmental Burden Analysis
 
-This repository refers to the paper:
+This repository refers to the paper:\\
 **Title:** "The Environmental Burden of the United States’ Bitcoin Mining Boom"
 
 **Authors**: Gianluca Guidi (1,2); Francesca Dominici (1); Nat Steinsultz (3); Gabriel Dance (4), Lucas Henneman (5); Henry Richardson (3); Edgar Castro (6); Falco J. Bargagli-Stoffi (1); Scott Delaney (6)
@@ -13,7 +13,7 @@ This repository refers to the paper:
 (5) Department of Civil, Environmental, and Infrastructure Engineering, Volgenau School of Engineering, George Mason University, Fairfax, Virginia, USA
 (6) Department of Environmental Health, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, USA
 
-Pre-print: https://www.researchsquare.com/article/rs-5306015/v1
+Pre-print avaialble at https://www.researchsquare.com/article/rs-5306015/v1
 
 ## Overview
 
