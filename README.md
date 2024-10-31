@@ -10,8 +10,10 @@ Welcome to the repository for the paper **The Environmental Burden of the United
 - Lucas Henneman (5)  
 - Henry Richardson (3)  
 - Edgar Castro (6)  
-- Falco J. Bargagli-Stoffi (1,7)  
-- Scott Delaney (6)
+- Falco J. Bargagli-Stoffi (1,7)*
+- Scott Delaney (6)*
+
+* Equal contribution.
 
 **Affiliations:**  
 1. Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, USA  
