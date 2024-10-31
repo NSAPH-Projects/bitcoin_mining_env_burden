@@ -10,7 +10,7 @@ Welcome to the repository for the paper **The Environmental Burden of the United
 - Lucas Henneman (5)  
 - Henry Richardson (3)  
 - Edgar Castro (6)  
-- Falco J. Bargagli-Stoffi (1)  
+- Falco J. Bargagli-Stoffi (1,7)  
 - Scott Delaney (6)
 
 **Affiliations:**  
@@ -19,7 +19,8 @@ Welcome to the repository for the paper **The Environmental Burden of the United
 3. WattTime.org, Oakland, California, USA  
 4. The New York Times, New York, New York, USA  
 5. Department of Civil, Environmental, and Infrastructure Engineering, Volgenau School of Engineering, George Mason University, Fairfax, Virginia, USA  
-6. Department of Environmental Health, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, USA  
+6. Department of Environmental Health, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, USA
+7. Department of Biostatistics, UCLA Fielding School of Public Health, Los Angeles, California, USA
 
 The pre-print of the paper is available [here](https://www.researchsquare.com/article/rs-5306015/v1).
  
