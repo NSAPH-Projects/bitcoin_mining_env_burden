@@ -1,19 +1,28 @@
-# Bitcoin Mining Environmental Burden Analysis
+# The Environmental Burden of the United States’ Bitcoin Mining Boom
 
-This repository refers to the paper  
-Title: **The Environmental Burden of the United States’ Bitcoin Mining Boom**
+Welcome to the repository for **The Environmental Burden of the United States’ Bitcoin Mining Boom**.
 
-Authors:  **Gianluca Guidi (1,2); Francesca Dominici (1); Nat Steinsultz (3); Gabriel Dance (4), Lucas Henneman (5); Henry Richardson (3); Edgar Castro (6); Falco J. Bargagli-Stoffi (1); Scott Delaney (6)**
+**Authors:**  
+- Gianluca Guidi (1,2)  
+- Francesca Dominici (1)  
+- Nat Steinsultz (3)  
+- Gabriel Dance (4)  
+- Lucas Henneman (5)  
+- Henry Richardson (3)  
+- Edgar Castro (6)  
+- Falco J. Bargagli-Stoffi (1)  
+- Scott Delaney (6)
 
-Affiliations: (1) Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, USA  
-(2) Department of Computer Science, University of Pisa, Pisa, Italy  
-(3) WattTime.org, Oakland, California, USA  
-(4) The New York Times, New York, New York, USA  
-(5) Department of Civil, Environmental, and Infrastructure Engineering, Volgenau School of Engineering, George Mason University, Fairfax, Virginia, USA  
-(6) Department of Environmental Health, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, USA  
+**Affiliations:**  
+1. Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, USA  
+2. Department of Computer Science, University of Pisa, Pisa, Italy  
+3. WattTime.org, Oakland, California, USA  
+4. The New York Times, New York, New York, USA  
+5. Department of Civil, Environmental, and Infrastructure Engineering, Volgenau School of Engineering, George Mason University, Fairfax, Virginia, USA  
+6. Department of Environmental Health, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, USA  
 
-Pre-print avaialble at https://www.researchsquare.com/article/rs-5306015/v1
-
+The pre-print of the paper is available [here](https://www.researchsquare.com/article/rs-5306015/v1)
+ 
 ## Overview
 
 This repository contains code and data for analyzing the environmental burden of Bitcoin mining. The entire data pipeline identifies the annual emissions that each plant produces due to the Bitcoin miner’s marginal electricity demand.
