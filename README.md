@@ -21,7 +21,7 @@ Welcome to the repository for the paper **The Environmental Burden of the United
 5. Department of Civil, Environmental, and Infrastructure Engineering, Volgenau School of Engineering, George Mason University, Fairfax, Virginia, USA  
 6. Department of Environmental Health, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, USA  
 
-The pre-print of the paper is available [here](https://www.researchsquare.com/article/rs-5306015/v1)
+The pre-print of the paper is available [here](https://www.researchsquare.com/article/rs-5306015/v1).
  
 ## Overview
 
