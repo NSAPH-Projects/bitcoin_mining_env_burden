@@ -13,7 +13,7 @@ Welcome to the repository for the paper **The Environmental Burden of the United
 - Falco J. Bargagli-Stoffi (1,7)*
 - Scott Delaney (6)*
 
-\\* Equal contribution.
+\* Equal contribution.
 
 **Affiliations:**  
 1. Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, USA  
