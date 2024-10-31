@@ -1,6 +1,6 @@
 # The Environmental Burden of the United States’ Bitcoin Mining Boom
 
-Welcome to the repository for **The Environmental Burden of the United States’ Bitcoin Mining Boom**.
+Welcome to the repository for the paper **The Environmental Burden of the United States’ Bitcoin Mining Boom**.
 
 **Authors:**  
 - Gianluca Guidi (1,2)  
